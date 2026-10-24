@@ -2,6 +2,7 @@ import FirstComponent from "./components/NewComponent"
 import TemplateExpressions from "./components/TemplateExpressions"
 import ReusedComponent from "./components/ReusedComponent"
 import './App.css'
+import EventoClick from "./components/EventoClick"
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <FirstComponent />
       <TemplateExpressions />
       <ReusedComponent />
+      <EventoClick />
     </div>
   )
 }
