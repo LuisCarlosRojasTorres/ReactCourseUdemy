@@ -1,9 +1,11 @@
+import ReusedComponent from "./ReusedComponent";
 
 const FirstComponent = () => {
     // Aqui podemos adicionar lógica do componente, se necessário
   return (
     <div>
       <h2>Primeiro Componente</h2>
+      <ReusedComponent />
     </div>
   )
 }
