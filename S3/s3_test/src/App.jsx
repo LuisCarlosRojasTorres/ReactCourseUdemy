@@ -1,15 +1,13 @@
 import "./App.css"
-import Hero from "./assets/Hero.png"
+import ManageData from "./components/ManageData"
+import AddImage from "./components/AddImage"
 function App() {
   
 
   return (
     <div>
-      <h1>S3 More content!</h1>
-      {/* Local image from public folder */}
-      <img src="/totodile.png" alt="Placeholder" />
-      {/* Imported image from assets */}
-      <img src={Hero} alt="Placeholder" />
+      <ManageData />
+      {/* <AddImage /> */}
     </div>
   )
 }
