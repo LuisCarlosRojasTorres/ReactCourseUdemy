@@ -2,6 +2,7 @@ import "./App.css"
 import ManageData from "./components/ManageData"
 import AddImage from "./components/AddImage"
 import ListRender from "./components/ListRender"
+import PrevStateExample from "./components/PrevStateExample"
 function App() {
   
 
@@ -9,7 +10,8 @@ function App() {
     <div>
       {/* <ManageData /> */}
       {/* <AddImage /> */}
-      <ListRender />
+      {/* <ListRender /> */}
+      {<PrevStateExample /> }
     </div>
   )
 }
