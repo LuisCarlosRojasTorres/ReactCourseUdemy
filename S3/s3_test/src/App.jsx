@@ -3,6 +3,7 @@ import ManageData from "./components/ManageData"
 import AddImage from "./components/AddImage"
 import ListRender from "./components/ListRender"
 import PrevStateExample from "./components/PrevStateExample"
+import ConditionalRender from "./components/ConditionalRender"
 function App() {
   
 
@@ -11,7 +12,8 @@ function App() {
       {/* <ManageData /> */}
       {/* <AddImage /> */}
       {/* <ListRender /> */}
-      {<PrevStateExample /> }
+      {/*<PrevStateExample />*/ }
+      <ConditionalRender />
     </div>
   )
 }
