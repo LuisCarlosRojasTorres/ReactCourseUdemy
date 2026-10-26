@@ -20,7 +20,10 @@ function App() {
       {/*<ConditionalRender />*/ }
       {/*<ConditionalTernario />*/ }
       {/*<PropsExample name="Rufa" age={18} />*/}
-      <DesestructuringPropsExample brand="Siemens" model="Velaro" year={2020} />
+      <DesestructuringPropsExample brand="Dummy1" model="Model1" year={2020} />
+      <DesestructuringPropsExample brand="Dummy2" model="Model2" year={2021} />
+      <DesestructuringPropsExample brand="Dummy3" model="Model3" year={2022} />
+      <DesestructuringPropsExample brand="Dummy4" model="Model4" year={2023} />
     </div>
   )
 }
