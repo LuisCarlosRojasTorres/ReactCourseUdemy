@@ -6,6 +6,7 @@ import PrevStateExample from "./components/PrevStateExample"
 import ConditionalRender from "./components/ConditionalRender"
 import ConditionalTernario from "./components/ConditionalTernario"
 import PropsExample from "./components/PropsExample"
+import DesestructuringPropsExample from "./components/DesestructuringPropsExample"
 
 function App() {
   
@@ -18,8 +19,8 @@ function App() {
       {/*<PrevStateExample />*/ }
       {/*<ConditionalRender />*/ }
       {/*<ConditionalTernario />*/ }
-      <PropsExample name="Rufa" age={18} />
-      
+      {/*<PropsExample name="Rufa" age={18} />*/}
+      <DesestructuringPropsExample brand="Siemens" model="Velaro" year={2020} />
     </div>
   )
 }
