@@ -9,6 +9,7 @@ import PropsExample from "./components/PropsExample"
 import DesestructuringPropsExample from "./components/DesestructuringPropsExample"
 import FragmentExample from "./components/FragmentExample"
 import ChildrenPropExample from "./components/ChildrenPropExample"
+import FunctionAsPropExample from "./components/FunctionAsPropExample"
 
 function App() {
   
@@ -18,6 +19,11 @@ function App() {
     { index: 3, brand: "Dummy3", model: "Model3", year: 2022 },
     { index: 4, brand: "Dummy4", model: "Model4", year: 2023 }
   ];
+
+  function showMessage() {
+    alert("This is a message from the showMessage function");
+  }
+
   return (
     <div>
       {/* <ManageData /> */}
@@ -36,9 +42,10 @@ function App() {
         />
       ))}*/}
       {/* <FragmentExample propFragment="This is a prop passed to FragmentExample" /> */}
-      <ChildrenPropExample value="This is a value prop">
+      {/*<ChildrenPropExample value="This is a value prop">
         <p>This is a child element passed to ChildrenPropExample</p>
-      </ChildrenPropExample> 
+      </ChildrenPropExample> */}
+      <FunctionAsPropExample myFunc={showMessage} /> 
     </div>
   )
 }
