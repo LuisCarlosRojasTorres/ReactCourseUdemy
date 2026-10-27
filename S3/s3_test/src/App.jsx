@@ -8,6 +8,7 @@ import ConditionalTernario from "./components/ConditionalTernario"
 import PropsExample from "./components/PropsExample"
 import DesestructuringPropsExample from "./components/DesestructuringPropsExample"
 import FragmentExample from "./components/FragmentExample"
+import ChildrenPropExample from "./components/ChildrenPropExample"
 
 function App() {
   
@@ -34,7 +35,10 @@ function App() {
           year={car.year}
         />
       ))}*/}
-      <FragmentExample propFragment="This is a prop passed to FragmentExample" />
+      {/* <FragmentExample propFragment="This is a prop passed to FragmentExample" /> */}
+      <ChildrenPropExample value="This is a value prop">
+        <p>This is a child element passed to ChildrenPropExample</p>
+      </ChildrenPropExample> 
     </div>
   )
 }
