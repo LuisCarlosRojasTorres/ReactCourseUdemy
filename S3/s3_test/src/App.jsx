@@ -10,7 +10,12 @@ import DesestructuringPropsExample from "./components/DesestructuringPropsExampl
 
 function App() {
   
-
+  const cars = [
+    { index: 1,brand: "Dummy1", model: "Model1", year: 2020 },
+    { index: 2,brand: "Dummy2", model: "Model2", year: 2021 },
+    { index: 3, brand: "Dummy3", model: "Model3", year: 2022 },
+    { index: 4, brand: "Dummy4", model: "Model4", year: 2023 }
+  ];
   return (
     <div>
       {/* <ManageData /> */}
@@ -20,10 +25,14 @@ function App() {
       {/*<ConditionalRender />*/ }
       {/*<ConditionalTernario />*/ }
       {/*<PropsExample name="Rufa" age={18} />*/}
-      <DesestructuringPropsExample brand="Dummy1" model="Model1" year={2020} />
-      <DesestructuringPropsExample brand="Dummy2" model="Model2" year={2021} />
-      <DesestructuringPropsExample brand="Dummy3" model="Model3" year={2022} />
-      <DesestructuringPropsExample brand="Dummy4" model="Model4" year={2023} />
+      {cars.map((car) => (
+        <DesestructuringPropsExample
+          key={car.index}
+          brand={car.brand}
+          model={car.model}
+          year={car.year}
+        />
+      ))}
     </div>
   )
 }
