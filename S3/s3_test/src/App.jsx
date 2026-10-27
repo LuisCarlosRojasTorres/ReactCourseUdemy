@@ -7,6 +7,7 @@ import ConditionalRender from "./components/ConditionalRender"
 import ConditionalTernario from "./components/ConditionalTernario"
 import PropsExample from "./components/PropsExample"
 import DesestructuringPropsExample from "./components/DesestructuringPropsExample"
+import FragmentExample from "./components/FragmentExample"
 
 function App() {
   
@@ -25,14 +26,15 @@ function App() {
       {/*<ConditionalRender />*/ }
       {/*<ConditionalTernario />*/ }
       {/*<PropsExample name="Rufa" age={18} />*/}
-      {cars.map((car) => (
+      {/*cars.map((car) => (
         <DesestructuringPropsExample
           key={car.index}
           brand={car.brand}
           model={car.model}
           year={car.year}
         />
-      ))}
+      ))}*/}
+      <FragmentExample propFragment="This is a prop passed to FragmentExample" />
     </div>
   )
 }
