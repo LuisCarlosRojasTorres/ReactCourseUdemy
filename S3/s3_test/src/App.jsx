@@ -1,4 +1,5 @@
 import "./App.css"
+import { useState } from "react"
 import ManageData from "./components/ManageData"
 import AddImage from "./components/AddImage"
 import ListRender from "./components/ListRender"
@@ -10,9 +11,11 @@ import DesestructuringPropsExample from "./components/DesestructuringPropsExampl
 import FragmentExample from "./components/FragmentExample"
 import ChildrenPropExample from "./components/ChildrenPropExample"
 import FunctionAsPropExample from "./components/FunctionAsPropExample"
+import StateLiftExample from "./components/StateLiftExample"
+import StateLiftModifierExample from "./components/StateLiftModifierExample"
 
 function App() {
-  
+  /*
   const cars = [
     { index: 1,brand: "Dummy1", model: "Model1", year: 2020 },
     { index: 2,brand: "Dummy2", model: "Model2", year: 2021 },
@@ -22,6 +25,12 @@ function App() {
 
   function showMessage() {
     alert("This is a message from the showMessage function");
+  }
+  */
+  
+  const [message, setMessage] = useState("")
+  const handleMessage = (msg) => {
+    setMessage(msg)
   }
 
   return (
@@ -45,7 +54,9 @@ function App() {
       {/*<ChildrenPropExample value="This is a value prop">
         <p>This is a child element passed to ChildrenPropExample</p>
       </ChildrenPropExample> */}
-      <FunctionAsPropExample myFunc={showMessage} /> 
+      {/*<FunctionAsPropExample myFunc={showMessage} /> */}
+      <StateLiftExample msg={message} />
+      <StateLiftModifierExample modifyState={handleMessage} />
     </div>
   )
 }
