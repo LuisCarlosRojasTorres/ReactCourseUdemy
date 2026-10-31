@@ -5,11 +5,10 @@ import LabelEnvolventeExample from './components/LabelEnvolventeExample'
 function App() {
 
   return (
-    <>
-      Lobo
-      <MyForm />
+    <div>
+      Lobo      
       <LabelEnvolventeExample />
-    </>
+    </div>
   )
 }
 
