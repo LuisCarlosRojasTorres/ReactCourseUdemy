@@ -1,5 +1,6 @@
 import './App.css'
 import MyForm from './components/MyForm'
+import LabelEnvolventeExample from './components/LabelEnvolventeExample'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       Lobo
       <MyForm />
+      <LabelEnvolventeExample />
     </>
   )
 }

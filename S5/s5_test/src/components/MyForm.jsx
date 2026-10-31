@@ -5,9 +5,9 @@ const MyForm = () => {
             <div>
                 <label htmlFor="name">Name:</label>
                 <input type="text" name="name" placeholder="Digite o seu Nome"/>
-            </div>            
-            <button type="submit">Submit</button>
+            </div>                        
         </form>
+        <input type="submit" value="Submit" />
     </div>
   )
 }
